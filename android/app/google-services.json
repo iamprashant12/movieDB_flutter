@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "214455257209",
+    "firebase_url": "https://task-moviedb.firebaseio.com",
+    "project_id": "task-moviedb",
+    "storage_bucket": "task-moviedb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214455257209:android:67e644cfa51c21e9",
+        "android_client_info": {
+          "package_name": "com.example.task_movie_db"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "214455257209-ee98sq235h30ag1et2ndvfvk3h5q1f5a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjquPrYV9pJ6IRe355hqNEa3mnRfDbd5w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "214455257209-ee98sq235h30ag1et2ndvfvk3h5q1f5a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
