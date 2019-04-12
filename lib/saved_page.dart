@@ -27,7 +27,11 @@ class _SavedPageState extends State<SavedPage> {
         collectionReferenceSeries.snapshots.listen((datasnapShots) {
       list = datasnapShots.documents;
       List<Movie> seriesList = new List();
-      list.forEach((series) => seriesList.add(new Movie.map(series.data)));
+      list.forEach((series) {
+        Movie m=new Movie.map(series.data);
+        if(m.saved)
+        seriesList.add(m);
+      });
       setState(() {
         commonList.addAll(seriesList);
       });
@@ -36,7 +40,11 @@ class _SavedPageState extends State<SavedPage> {
         collectionReferenceMovies.snapshots.listen((dataSnapshots) {
       list = dataSnapshots.documents;
       List<Movie> movieList = new List();
-      list.forEach((movie) => movieList.add(new Movie.map(movie.data)));
+      list.forEach((movie) {
+        Movie m=new Movie.map(movie.data);
+        if(m.saved)
+          movieList.add(m);
+      });
       setState(() {
         commonList.addAll(movieList);
       });
